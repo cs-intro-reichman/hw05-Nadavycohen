@@ -90,13 +90,13 @@ public class GameOfLife {
 	// cell in the new board. Returns the new board.
 	public static int[][] evolve(int[][] board) {
 		//// Replace the following statement with your code.
-		int[][] newBoard = new int[board.length][board[0].length];
+		int[][] Board = new int[board.length][board[0].length];
 		for(int i=1;i<board.length-1;i++){
 			for(int j=1;j<board[i].length-1;j++){
-				newBoard[i][j]=cellValue(board, i, j);
+				Board[i][j]=cellValue(board, i, j);
 			}
 		}
-		return newBoard;
+		return Board;
 	}
 
 
