@@ -70,12 +70,12 @@ public class GameOfLife {
 		int rows = Integer.parseInt(in.readLine());
 		int cols = Integer.parseInt(in.readLine());
 		int[][] board = new int[rows + 2][cols + 2];
-		for (int i = 0; i < rows; i++ ){
+		for (int i = 1; i < rows; i++ ){
 			String shape = in.readLine();
 			if (!shape.isEmpty()){
-				for (int j =0; j < cols; j++){
+				for (int j =1; j < cols; j++){
 					if (shape.charAt(j-1) == 'x'){
-						board[i+1][j+1] = 1;
+						board[i][j] = 1;
 					}
 				}
 			}
